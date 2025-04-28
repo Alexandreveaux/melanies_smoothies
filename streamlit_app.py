@@ -1,10 +1,6 @@
 # Import python packages
-import os
 import streamlit as st
 from snowflake.snowpark.functions import col
-
-# ➕ Bypass OCSP issues (certificates) if needed
-os.environ["SF_OCSP_FAIL_OPEN"] = "true"
 
 # Write directly to the app
 st.title(f":cup_with_straw: Customize Your Smoothie! :cup_with_straw:")
